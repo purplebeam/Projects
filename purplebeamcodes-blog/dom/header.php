@@ -37,13 +37,13 @@
         
                 <!-- Main Page Navigation Item: Starts here -->
             <li class="nav-item">
-                 <a class="nav-link active" aria-current="page" href="#">Main Page</a>
+                 <a class="nav-link active" aria-current="page" href="index.php">Main</a>
             </li>
                 <!-- Main Page Navigation Item: Ends here -->
 
                 <!-- News Navigation Item: Starts here -->
             <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
+                <a class="nav-link" href="articles.php">Articles</a>
             </li>
                 <!-- News Navigation Item: Ends here -->
 
@@ -55,11 +55,11 @@
 
                 <!-- Dropdown Menu of Programming Languages: Start here -->
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">HTML5</a></li>
-                    <li><a class="dropdown-item" href="#">CSS3</a></li>
-                    <li><a class="dropdown-item" href="#">JavaScript</a></li>
-                    <li><a class="dropdown-item" href="#">MySQL</a></li>
-                    <li><a class="dropdown-item" href="#">PHP</a></li>
+                    <li><a class="dropdown-item" href="tutorial-pages/html5.php">HTML5</a></li>
+                    <li><a class="dropdown-item" href="tutorial-pages/css.php">CSS3</a></li>
+                    <li><a class="dropdown-item" href="tutorial-pages/javascript.php">JavaScript</a></li>
+                    <li><a class="dropdown-item" href="tutorial-pages/mysql.php">MySQL</a></li>
+                    <li><a class="dropdown-item" href="tutorial-pages/php.php">PHP</a></li>
                 </ul>
                 <!-- Dropdown Menu of Programming Languages: Ends here -->
 
@@ -67,15 +67,15 @@
             <!-- Dropdown Menu Tutorial Dropdown Toggle Button: Ends here -->
             
             <li class="nav-item">
-                <a class="nav-link" href="#">Memberboard</a>
+                <a class="nav-link" href="memberlist.php">Memberlist</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="log-in.php">Log in</a>
+                <a class="nav-link" href="login.php">Log In</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="sign-up.php">Sign Up</a>
+                <a class="nav-link" href="signup.php">Sign Up</a>
             </li>
       </ul>
 
