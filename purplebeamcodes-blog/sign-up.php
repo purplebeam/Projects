@@ -28,73 +28,9 @@ require_once("dom/header.php");
       margin-left: 25%;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      overflow: hidden;
-    }
-
-    #video-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-
-    #video-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
 
   </style>
 
-  <!-- Include the YouTube Iframe API -->
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script>
-    // Load the YouTube video
-    function loadYouTubeVideo() {
-      // Replace 'VIDEO_ID' with the actual YouTube video ID
-      var videoID = 'YQc4WT0yDH4';
-
-      // Create a YouTube player
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('video-background', {
-          videoId: videoID,
-          playerVars: {
-            autoplay: 1,
-            controls: 0,
-            showinfo: 0,
-            modestbranding: 1,
-            loop: 1,
-            playlist: videoID
-          },
-          events: {
-            onReady: function(event) {
-              event.target.mute();
-            }
-          }
-        });
-      }
-
-      // Load the YouTube Iframe API
-      var tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/iframe_api';
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    }
-
-    // Call the function to load the YouTube video
-    loadYouTubeVideo();
-  </script>
 
   <!-- Jumbotron -->
   <div style="margin-top: 5%;" class="container py-3">
