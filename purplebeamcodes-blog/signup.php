@@ -4,87 +4,62 @@ require_once("header.php");
 ?>
 
 
-<!-- Sign Up Form -->
-<section class="text-center text-lg-start">
-  <style>
-    .cascading-right {
-      margin-right: -50px;
-    }
+<section class="vh-100" style="background-color: #FBE7C6; margin-top: 50px;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
 
-    @media (max-width: 991.98px) {
-      .cascading-right {
-        margin-right: 0;
-      }
-    }
+            <h3 class="mb-5">Εγγραφή</h3>
 
-    label{
-      display: inline-block;
-    }
-
-
-
-    #name, #surname, #email, #password  {
-      width: 50%;
-      margin-left: 25%;
-    }
-
-
-  </style>
-
-
-  <!-- Jumbotron -->
-  <div style="margin-top: 5%;" class="container py-3">
-  <div class="row justify-content-center align-items-center">
-    <div class="col-lg-6 mb-5 mb-lg-0">
-      <div class="card cascading-right" style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px);">
-        <div class="card-body p-5 shadow-5 text-center">
-          <h2 class="fw-bold mb-5">Sign Up</h2>
-          <form>
-            <div>
-            <!-- Surname input -->
-            <div class="form-outline mb-4">
-            <input type="text" id="name" class="form-control" />
-            <label for="name">Name</label>
+            <div class="mb-4">
+              <div class="input-label">
+                <input  type="text" id="firstNameInput" class="form-control form-control-lg" />
+                <label class="form-label" for="firstNameInput">Όνομα</label>
+              </div>
             </div>
 
-            <!-- Surname input -->
-            <div class="form-outline mb-4">
-            <input type="text" id="surname" class="form-control" />
-            <label for="surname">Surname</label>
-            </div>
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="email" class="form-control" />
-              <label for="email">Email address</label>
+            <div class="mb-4">
+              <div class="input-label">
+                <input type="text" id="lastNameInput" class="form-control form-control-lg" />
+                <label class="form-label" for="lastNameInput">Επώνυμο</label>
+              </div>
             </div>
 
-            <!-- Password input -->
-            <div class="form-outline mb-4">
-              <input type="password" id="password" class="form-control" />
-              <label for="password">Password</label>
+            <div class="mb-4">
+              <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+              <label class="form-label" for="typePasswordX-2">Κωδικός Πρόσβασης</label>
             </div>
 
-            <!-- Checkbox -->
-            <div class="form-check mb-4 d-flex justify-content-center">
-              <input class="form-check-input me-2" type="checkbox" value="" id="remembermecheck" />
-              <label for="remembermecheck">Remember Me</label>
-            </div>
+            <div class="mb-4">
+              <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+              <label class="form-label" for="typeEmailX-2">Email</label>
             </div>
 
-            <!-- Login button -->
-            <a style = "padding: 10px 50px 10px 50px;" href="log-in.php" class="btn btn-primary btn-block mb-4">Login</a>
+            <hr class="my-4">
+            <button class="btn btn-dark btn-lg btn-block" type="submit">Εγγραφη</button>
 
-            <!-- Register Button -->
-            <a style = "padding: 10px 20px 10px 20px;" href="sign-up.php" class="btn btn-primary btn-block mb-4">Create Account</a>
+            
 
-            <!-- Forgot Password Option -->
-            <a href="sign-up.php" style="display:flex; justify-content: center;">Forgot Password?</a>
-          </form>
+           
+
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Section: Design Block -->
-<!-- Sign Up Form Ends -->
+<style>
+  #firstNameInput,#lastNameInput,#typePasswordX-2,#typeEmailX-2 {
+    border: 0.5px dashed black;
+  }
+
+  label {
+    display: flex;
+    align-items: start;
+  }
+</style>
+
+ 

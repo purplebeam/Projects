@@ -3,65 +3,52 @@ require_once("footer.php");
 require_once("header.php");
 ?>
 
-<!-- Login Form -->
-<section class="text-center text-lg-start">
-  <style>
-    .cascading-right {
-      margin-right: -50px;
-    }
+<section class="vh-100" style="background-color: #FBE7C6;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
 
-    @media (max-width: 991.98px) {
-      .cascading-right {
-        margin-right: 0;
-      }
-    }
-  </style>
+            <h3 class="mb-5">Είσοδος Λογαριασμού</h3>
 
-  <!-- Jumbotron -->
-  <div style="margin-top: 5%;" class="container py-3">
-  <div class="row justify-content-center align-items-center">
-    <div class="col-lg-6 mb-5 mb-lg-0">
-      <div class="card cascading-right" style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px);">
-        <div class="card-body p-5 shadow-5 text-center">
-          <h2 class="fw-bold mb-5">Log In</h2>
-          <form>
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form3Example3" class="form-control" />
-              <label class="form-label" for="form3Example3">Email address</label>
+            <div class="mb-4">
+              <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+              <label class="form-label" for="typeEmailX-2">Email</label>
             </div>
 
-            <!-- Password input -->
-            <div class="form-outline mb-4">
-              <input type="password" id="form3Example4" class="form-control" />
-              <label class="form-label" for="form3Example4">Password</label>
+            <div class="mb-4">
+              <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+              <label class="form-label" for="typePasswordX-2">Κωδικός Πρόσβασης</label>
             </div>
 
             <!-- Checkbox -->
-            <div style = "display: flex; justify-content: start;" class="form-check mb-4">
-              <input class="form-check-input me-2" type="checkbox" value="" id="remembermecheck" />
-              <label class="form-check-label" for="remembermecheck">Remember Me</label>
+            <div class="form-check d-flex justify-content-start mb-4">
+              <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+              <label class="form-check-label" for="form1Example3"><pre style="font-size: 19px; font-family: arial;">   Να με θυμάσαι</pre></label>
             </div>
 
-            <!-- Login button -->
-            <a style = "padding: 10px 50px 10px 50px;" href="log-in.php" class="btn btn-primary btn-block mb-4">Login</a>
+            <hr class="my-4">
+            <button class="btn btn-dark btn-lg btn-block" type="submit">Εισοδος</button>
 
-            <!-- Register Button -->
-            <a style = "padding: 10px 20px 10px 20px;" href="sign-up.php" class="btn btn-primary btn-block mb-4">Create Account</a>
-
-            <!-- Forgot Password Option -->
-            <a href="sign-up.php" style="display:flex; justify-content: center;">Forgot Password?</a>
-          </form>
+            
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Section: Design Block -->
+<style>
+  #firstNameInput,#lastNameInput,#typePasswordX-2,#typeEmailX-2 {
+    border: 0.5px dashed black;
+  }
 
-<!-- Login Form Ends -->
-
+  label {
+    display: flex;
+    align-items: start;
+  }
+</style>
 
 
 <?php
