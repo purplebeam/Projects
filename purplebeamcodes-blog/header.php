@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php $title="purplebeamcodes-tutorials";?>
+<?php $title="MyPortfolioBlog";?>
 
 <head>
     <meta charset="UTF-8">
@@ -21,8 +21,12 @@
          box-sizing: content-box;
         }
     </style>
+</head>
 
-                <!-- Blog Navigation Bar -->
+<body>
+    
+    <header>
+                        <!-- Blog Navigation Bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
     
@@ -43,25 +47,9 @@
 
                 <!-- News Navigation Item: Starts here -->
             <li class="nav-item">
-                <a class="nav-link" href="articles.php">Articles</a>
+                <a class="nav-link" href="blog.php">Blog</a>
             </li>
                 <!-- News Navigation Item: Ends here -->
-
-                <!-- Dropdown Menu Tutorial Dropdown Toggle Button: Starts here -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Tutorials
-                </a>
-
-                <!-- Dropdown Menu of Programming Languages: Start here -->
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="tutorial-pages/html5.php">HTML5</a></li>
-                    <li><a class="dropdown-item" href="tutorial-pages/css.php">CSS3</a></li>
-                    <li><a class="dropdown-item" href="tutorial-pages/javascript.php">JavaScript</a></li>
-                    <li><a class="dropdown-item" href="tutorial-pages/mysql.php">MySQL</a></li>
-                    <li><a class="dropdown-item" href="tutorial-pages/php.php">PHP</a></li>
-                </ul>
-                <!-- Dropdown Menu of Programming Languages: Ends here -->
 
              </li>
             <!-- Dropdown Menu Tutorial Dropdown Toggle Button: Ends here -->
@@ -86,10 +74,9 @@
       </form>
       <!-- Blog Search Engine: Ends here-->
 
+        </div>
     </div>
-  </div>
-</nav>
-
-</head>
-
+    </nav>
+    </header>
+</body>
 </html>

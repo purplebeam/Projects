@@ -1,6 +1,6 @@
 <?php 
-require_once("dom/footer.php");
-require_once("dom/header.php");
+require_once("footer.php");
+require_once("header.php");
 ?>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
