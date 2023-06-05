@@ -2,15 +2,18 @@
 require_once("footer.php");
 require_once("header.php");
 ?>
+
+<div style="background-color: #FBE7C6;" id="intro" class="p-5 text-center">
+    </div>
 <body style="background-color: #FBE7C6;">
-<table class="table align-middle mb-0 bg-white">
-  <thead class="bg-light">
+<table class="table align-middle mb-0  bg-white">
+  <thead  class="bg-dark">
     <tr>
-      <th>Name</th>
-      <th>Title</th>
-      <th>Status</th>
-      <th>Position</th>
-      <th>Actions</th>
+      <th class="text-light">Name</th>
+      <th class="text-light">Title</th>
+      <th class="text-light">Status</th>
+      <th class="text-light">Role</th>
+      <th class="text-light">Actions</th>
     </tr>
   </thead>
   <tbody>

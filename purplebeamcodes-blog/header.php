@@ -9,6 +9,8 @@
 
     <title> <?php echo $title;?> </title>
     
+                <!-- Setting the icon at tab -->
+    <link rel="icon" href="https://img.icons8.com/?size=512&id=DEFdxLKFcjT9&format=png">
                 <!-- Local Style CSS File -->
     <link rel="stylesheet" href="css/styles.css">
                 <!-- Bootstrap CSS CDN -->
@@ -29,6 +31,8 @@
         .selector-for-some-widget {
          box-sizing: content-box;
         }
+
+        
     </style>
 </head>
 
@@ -40,8 +44,8 @@
             <div class="container-fluid">
             
             <!-- Navbar brand -->
-            <a class="navbar-brand" target="_blank" href="https://mdbootstrap.com/docs/standard/">
-                <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="16" alt="" loading="lazy"
+            <a class="navbar-brand">
+                <img src="https://img.icons8.com/?size=512&id=DEFdxLKFcjT9&format=png" height="50" alt="" loading="lazy"
                  style="margin-top: -3px;" />
             </a>
 
@@ -55,7 +59,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="index.php">Αρχική</a>
+              <a class="nav-link text-light " aria-current="page" href="index.php">Αρχική</a>
             </li>
 
             <li class="nav-item">
@@ -64,6 +68,10 @@
 
             <li class="nav-item">
               <a class="nav-link text-light" href="memberlist.php">Λίστα Μελών</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="profile.php">Προφίλ</a>
             </li>
 
             <li class="nav-item">
