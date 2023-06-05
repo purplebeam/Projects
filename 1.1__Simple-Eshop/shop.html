@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <!-- Setting encoding for Greek language -->
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap mobile proper rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>ToManavikoMou</title>
+
+    <!-- CSS linking frameworks -->
+    <link rel="stylesheet" href="styles-grocery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    
+    <!-- JS linking frameworks -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+</head>
+
+<body class="background">
+  
+
+<div class="container-sm container-md container-lg container-xl container-xxl">
+
+  <!-- Website Main Title -->
+  <h1 class="text-center title-style" style = "display: flex; justify-content: center;">e-manaviko.gr</h1>
+  
+  <!-- Main Menu Settings -->
+  <div class="btn-group main-menu " role="group" aria-label="Basic example">
+    <a type="button" href = "index.html" class="btn btn-primary main-menu-buttons">Αρχική</a>
+    <a type="button" href = "vegetables.html" class="btn btn-primary main-menu-buttons">Λαχανικά</a>
+    <a type="button" href = "fruits.html" class="btn btn-primary main-menu-buttons">Φρούτα</a>
+    <a type="button" href = "seeds.html" class="btn btn-primary main-menu-buttons">Σπόροι</a>
+    <a type="button" href = "about.html" class="btn btn-primary main-menu-buttons">Ποιοί Είμαστε</a>
+    <a type="button" href = "contact.html" class="btn btn-primary main-menu-buttons">Επικοινωνία</a>
+  </div>
+
+  <!-- Δημιουργία Επιλογής Κατηγορίας με label/select (ftiakse css klasi!!!)-->
+  <div style="color:azure !important;">
+	 <label style="color:azure !important;" for="category-select">Κατηγορία:</label>
+	  <select style="background-color: #1D741B;" id="category-select">
+		  <option style="color:azure !important;" value="no-category">Καμία Κατηγορία</option>
+		  <option style="color:azure !important;" value="fruits">Φρούτα</option>
+		  <option style="color:azure !important;" value="vegetables">Λαχανικά</option>
+		  <option style="color:azure !important;" value="seeds">Σπόροι</option>
+	  </select>
+  </div>
+
+
+  <div id="card-container">
+		<!-- Cards will be dynamically added here based on category selection -->
+	</div>
+
+	<div class="total-price">
+		<span class="total-price-label" style="color:azure !important;"> Συνολικό Ποσό:</span>
+		<span id="total-price-value" style="color:azure !important;" >0.00 €</span>
+	</div>
+
+	<button class="submit-button button-footer">Καταχώρηση Παραγγελίας</button>
+
+
+
+  <!-- JS CODE -->
+	<script>
+		// Sample data for the cards
+		const products = {
+
+      // Φρόυτα
+			fruits: [
+				{
+					image: 'https://img.freepik.com/free-photo/strawberry-isolated-white-background-close-up_93675-128534.jpg?w=996&t=st=1682271996~exp=1682272596~hmac=e4de2b3079a80de4c646b4d1f226c2a88c6c15f947467ca0708b3cf4591234d5',
+					name: 'Φράουλα',
+					itemNumber: 'Τεμάχιο 1',
+					value: '1.00 €',
+					selected: false
+				},
+				{
+					image: 'https://img.freepik.com/free-photo/sliced-whole-oranges_144627-3981.jpg?w=1380&t=st=1682272035~exp=1682272635~hmac=6c880690c496a7a4dd3ddef062b2b1ab079a6e79c8a6f5776a29ef67dff5ed09',
+					name: 'Πορτοκάλι',
+					itemNumber: 'Τεμάχιο 2',
+					value: '2.00 €',
+					selected: false
+				},
+				{
+					image: 'https://img.freepik.com/free-vector/vector-ripe-yellow-banana-bunch-isolated-white-background_1284-45456.jpg?w=996&t=st=1682272094~exp=1682272694~hmac=02ba5fb7a188e9e946ca5a1fd0e0778a8ad1f1058c869321866fff0caa0b0c24',
+					name: 'Μπανάνα',
+					itemNumber: 'Τεμάχιο 3',
+					value: '3.00 €',
+					selected: false
+				}
+			],
+
+      // Λαχανικά
+			vegetables: [
+				{
+				  image: 'https://img.freepik.com/free-photo/tomatoes_144627-15411.jpg?w=1380&t=st=1682272181~exp=1682272781~hmac=f74359e51dbf61741b2a76b77b2e63bc2e539d902513037ca36a08cf21f8d365',
+				  name: 'Ντομάτα',
+          		  itemNumber: 'Τεμάχιο 4',
+				  value: '1.00 €',
+				  selected: false
+			},
+			{
+				image: 'https://img.freepik.com/free-photo/top-view-sliced-cucumbers-stand-with-knife-checkered-towel-gray-surface_141793-18590.jpg?w=1060&t=st=1682272230~exp=1682272830~hmac=62389150cc4a6f211dd65c88fb7dcf9e9f7d69ba820dd1a9a55fd653ed6ebb05',
+				name: 'Αγγούρι',
+				itemNumber: 'Τεμάχιο 5',
+				value: '2.00 €',
+				selected: false
+			},
+			{
+				image: 'https://img.freepik.com/free-vector/realistic-onion-composition_1284-72135.jpg?w=996&t=st=1682272267~exp=1682272867~hmac=b311f5fe23ea673de37ed31aecd1b90765e01c140e824819f3a65e54c8465511',
+				name: 'Κρεμμύδι',
+				itemNumber: 'Τεμάχιο 6',
+				value: '3.00 €',
+				selected: false
+			}
+		],
+    
+    // Σπόροι
+		seeds: [
+			{
+				image: 'https://img.freepik.com/free-photo/bag-with-whole-corn-feed-animals_181624-31551.jpg?w=1380&t=st=1682272407~exp=1682273007~hmac=db553a4ba98fb23ba1c4601aa80cb5454b4602e7a882d060a80735962c08bd5e',
+				name: 'Καλαμπόκι',
+				itemNumber: 'Τεμάχιο 7',
+				value: '1.00 €',
+				selected: false
+			},
+			{
+				image: 'https://img.freepik.com/free-photo/pepitas-inside-scattered-around-bowl-marble-surface_114579-55117.jpg?w=1380&t=st=1682272484~exp=1682273084~hmac=c58c681f28f8314bf91ed403868c4060340a6817851b5e42652a279909978f0a',
+				name: 'Κολοκύθα',
+				itemNumber: 'Τεμάχιο 8',
+				value: '2.00 €',
+				selected: false
+			},
+			{
+				image: 'https://img.freepik.com/free-vector/realistic-wheat-composition_1284-22993.jpg?w=826&t=st=1682272863~exp=1682273463~hmac=355600bf33f9e0e87506141df9106fc6219a88999d6db18fe42ea89ba2540b09',
+				name: 'Σιτάρι',
+				itemNumber: 'Τεμάχιο 9',
+				value: '3.00 €',
+				selected: false
+			}
+		]
+	};
+
+	
+	const categorySelect = document.getElementById('category-select');
+	const cardContainer = document.getElementById('card-container');
+	const totalPriceValue = document.getElementById('total-price-value');
+	const submitButton = document.querySelector('.submit-button');
+
+	
+	function generateCardHtml(product) {
+		return `
+			<div class="card">
+				<img src="${product.image}" alt="${product.name}">
+				<div class="card-details">
+					<div class="card-name">${product.name}</div>
+					<div class="card-item-number">${product.itemNumber}</div>
+					<div class="card-value">${product.value}</div>
+				</div>
+			</div>
+		`;
+	}
+
+	
+	function calculateTotalPrice(products) {
+		let totalPrice = 0;
+		for (const product of products) {
+			totalPrice += parseFloat(product.value.replace('€', ''));
+		}
+		return totalPrice.toFixed(2);
+	}
+
+	
+	function addCards(category) {
+    const cardContainer = document.getElementById('card-container');
+    cardContainer.innerHTML = '';
+
+    products[category].forEach(product => {
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    
+    card.addEventListener('click', () => {
+      product.selected = !product.selected;
+      updateTotalPrice();
+      updateCards(category);
+    });
+
+    
+    if (product.selected) {
+      card.classList.add('selected');
+    }
+
+    
+    const image = document.createElement('img');
+    image.src = product.image;
+    
+  });
+}
+
+	categorySelect.addEventListener('change', (event) => {
+		const category = event.target.value;
+		if (category) {
+			
+			const productsInCategory = products[category];
+			const cardHtmlArray = productsInCategory.map((product) => generateCardHtml(product));
+			cardContainer.innerHTML = cardHtmlArray.join('');
+
+			
+			const totalPrice = calculateTotalPrice(productsInCategory);
+			totalPriceValue.textContent = `${totalPrice} €`;
+		} else {
+			cardContainer.innerHTML = '';
+			totalPriceValue.textContent = '0.00 €';
+		}
+	});
+
+	
+	submitButton.addEventListener('click', () => {
+		
+		alert(`Η τελική τιμή διαμορφώνεται σε ${totalPriceValue.textContent}`);
+	});
+</script>
+
+</body>
+
+
+</html>

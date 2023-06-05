@@ -1,0 +1,258 @@
+.title-style {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    color: #DED93E!important;
+    text-align: center !important;
+    padding: 10px !important;
+}
+
+
+
+/* Setting my favorite font to all the page */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:500');
+
+html, body {
+  font-family: 'Fira Sans', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+
+/* Main Menu Styling */
+
+.main-menu 
+{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.main-menu-buttons
+{
+    background-color: #1D741B !important;
+    border-color: #1A5653 !important;
+    border-width: 2px !important;
+    color: #DED93E !important;
+}
+
+.main-menu-buttons:hover
+{
+    background-color:#107869  !important;
+}
+
+.background {
+    /* Adding colors from https://www.canva.com/colors/color-palettes/northern-lights-4/ */
+    background-color: #08313A !important; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-regulation {
+    display: flex;
+    align-self: center;
+    max-width: 300px;
+    max-height: 200px;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+}
+
+.button-footer {
+    display: flex !important;
+    align-self: center !important;
+    justify-content: center !important;
+    background-color: #1D741B !important;
+    border-color: #1A5653 !important;
+    border-width: 2px !important;
+    color: #DED93E !important;
+
+}
+.button-footer:hover {
+    background-color:#107869  !important;
+}
+
+.transparent-cards {
+    background-color: rgba(0,0,0,0) !important;
+    border-width: 5px !important;
+}
+
+.antitransparent-text {
+    color: white !important;
+    padding: 15px !important;
+}
+
+
+.button-dropdown {
+    background-color: #1D741B !important;
+    border-color: #1A5653 !important;
+    border-width: 2px !important;
+    color: #DED93E !important;
+	
+
+}
+.button-dropdown:hover {
+    background-color:#107869  !important;
+	
+}
+
+.card-flexers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.dropdown-margin {
+    margin-bottom: 120px;
+	margin: 100px;
+	
+}
+
+.img-reg-shop {
+
+    display: flex;
+    align-self: center;
+    max-width: 300px;
+    max-height: 300px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+
+}
+
+.footer-paragraph {
+    display: flex !important;
+    align-self: center !important;
+    justify-content: center !important;
+    padding: 10px !important;
+
+}
+
+.move-img {
+    display: flex !important;
+    margin-left: auto !important;
+    margin-top: -200px !important;
+    margin-right: 100px !important;
+}
+
+.move-form {
+    display: flex !important; 
+    flex-direction: column !important; 
+    width: 50% !important;; 
+    margin-left: 800px !important; 
+    margin-top: -700px !important;
+    color: azure !important;
+
+}
+
+body {
+			font-family: Arial, sans-serif;
+		}
+
+h1 {
+			text-align: center;
+		}
+
+.total-price {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			margin-top: 20px;
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+.total-price-label {
+			margin-right: 10px;
+		}
+
+.submit-button {
+			display: block;
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+.submit-button:hover {
+			background-color: #0056b3;
+		}
+
+body {
+			font-family: Arial, sans-serif;
+		}
+
+h1 {
+			text-align: center;
+		}
+
+.card {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+.card img {
+			margin-right: 10px;
+			max-width: 300px;
+			max-height: 200px;
+		}
+
+.card-details {
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+			text-align: right;
+		}
+
+.card-name {
+			font-weight: bold;
+			font-size: 1.2rem;
+			margin-bottom: 5px;
+		}
+
+.card-item-number {
+			font-size: 0.8rem;
+			margin-bottom: 5px;
+		}
+
+.card-value {
+			font-size: 1.1rem;
+			font-weight: bold;
+		}
+
+.total-price {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			margin-top: 20px;
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+.total-price-label {
+			margin-right: 10px;
+		}
+
+.submit-button {
+			display: block;
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+.submit-button:hover {
+			background-color: #0056b3;
+		}
