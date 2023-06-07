@@ -11,8 +11,6 @@
     
                 <!-- Setting the icon at tab -->
     <link rel="icon" href="https://img.icons8.com/?size=512&id=DEFdxLKFcjT9&format=png">
-                <!-- Local Style CSS File -->
-    <link rel="stylesheet" href="css/styles.css">
                 <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
                 <!-- Bootstrap JS CDN -->
@@ -23,9 +21,7 @@
                 <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
                 <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-                <!-- Custom styles -->
-    <link rel="stylesheet" href="css/style.css" />
+                <link rel="stylesheet" href="css/mdb.min.css" />
     
     <style>
         .selector-for-some-widget {
