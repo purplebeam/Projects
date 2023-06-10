@@ -8,7 +8,7 @@ require_once("header.php");
 <head>
 
 </head>
-<body style="background-color: #FBE7C6;">
+<body>
       <!--Main Navigation-->
   <header>
     <!-- Intro settings -->

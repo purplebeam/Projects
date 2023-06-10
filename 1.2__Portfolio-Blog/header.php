@@ -21,7 +21,11 @@
                 <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
                 <!-- MDB -->
-                <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+                <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/styles.css" />
+                <!-- IconScout cdn -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     
     <style>
         .selector-for-some-widget {
@@ -33,6 +37,7 @@
 </head>
 
 <body>
+
     
     <header>
         <!-- Navbar -->
@@ -77,7 +82,20 @@
             <li class="nav-item">
               <a class="nav-link text-light" aria-current="page" href="signup.php">Εγγραφή</a>
             </li>
+
+            
+            <li class="nav__profile">
+              <div class="avatar"></div>
+              <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="logout.html">Log Out</a></li>
+              </ul>
+            </li>
           </ul>
+
+          <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+          <button id="close__nav-btn"><i class="uil uil-times-circle"></i></button>
+
 
             
 

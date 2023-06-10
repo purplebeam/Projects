@@ -1,6 +1,6 @@
 <?php 
-require_once("footer.php");
 require_once("header.php");
+require_once("footer.php");
 ?>
 
 <div style="background-color: #FBE7C6;" id="intro" class="p-5 text-center">
