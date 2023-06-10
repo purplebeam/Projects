@@ -2,10 +2,13 @@
 require_once("header.php");
 require_once("footer.php");
 ?>
-<div style="background-color: #FBE7C6;" id="intro" class="p-5 text-center">
+
+
+<!-- MDB Profile: START -->
+<div id="intro" class="p-5 text-center">
     </div>
-<body style="background-color: #FBE7C6;">
-<section style="background-color: #FBE7C6;">
+<body>
+<section>
   <div class="container py-5">
     <div class="row">
       <div class="col">
@@ -183,3 +186,5 @@ require_once("footer.php");
   </div>
 </section>
 </body>
+
+<!-- MDB Profile: END -->

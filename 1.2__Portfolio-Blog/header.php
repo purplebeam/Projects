@@ -18,12 +18,14 @@
                 <!-- Overriding global box-sizing value from content-box to border-box -->
                 <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-                <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+                <!-- Google Fonts Ubuntu -->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
                 <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
                 <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
                 <!-- IconScout cdn -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     
@@ -87,8 +89,8 @@
             <li class="nav__profile">
               <div class="avatar"></div>
               <ul>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="logout.html">Log Out</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="logout.php">Log Out</a></li>
               </ul>
             </li>
           </ul>

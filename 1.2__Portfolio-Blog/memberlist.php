@@ -3,9 +3,13 @@ require_once("header.php");
 require_once("footer.php");
 ?>
 
-<div style="background-color: #FBE7C6;" id="intro" class="p-5 text-center">
+
+
+
+<!-- MDB memberlist: START -->
+<div id="intro" class="p-5 text-center">
     </div>
-<body style="background-color: #FBE7C6;">
+<body>
 <table class="table align-middle mb-0  bg-white">
   <thead  class="bg-dark">
     <tr>
@@ -117,3 +121,4 @@ require_once("footer.php");
   </tbody>
 </table>
 </body>
+<!-- MDB memberlist: END -->
