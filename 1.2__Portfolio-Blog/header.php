@@ -43,54 +43,41 @@
     
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-            <div class="container-fluid">
-            
-            <!-- Navbar brand -->
-            <a class="navbar-brand">
-                <img src="https://img.icons8.com/?size=512&id=DEFdxLKFcjT9&format=png" height="50" alt="" loading="lazy"
-                 style="margin-top: -3px;" />
-            </a>
+        <nav>
+            <div class="container-fluid nav__container">
+            <a href="index.php" class="nav__logo">Portfolio Blog</a>
+            <ul class="nav__items">
 
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-             aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-            </button>
+              <li>
+                <a  aria-current="page" href="index.php">Αρχική</a>
+              </li>
 
-            <div class="collapse navbar-collapse" id="navbarExample01">
-            
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li>
+                <a href="blog.php">Άρθρα</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link text-light " aria-current="page" href="index.php">Αρχική</a>
-            </li>
+              <li>
+                <a href="memberlist.php">Λίστα Μελών</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link text-light" href="blog.php">Άρθρα</a>
-            </li>
+              <li>
+                <a aria-current="page" href="profile.php">Προφίλ</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link text-light" href="memberlist.php">Λίστα Μελών</a>
-            </li>
+              <li>
+                <a aria-current="page" href="login.php">Είσοδος</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="profile.php">Προφίλ</a>
-            </li>
+              <li>
+                <a aria-current="page" href="signup.php">Εγγραφή</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="login.php">Είσοδος</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="signup.php">Εγγραφή</a>
-            </li>
-
-            
-            <li class="nav__profile">
-              <div class="avatar"></div>
-              <ul>
-                <li><a href="dashboard.php">Dashboard</a></li>
-                <li><a href="logout.php">Log Out</a></li>
+              
+              <li class="nav__profile">
+                <div class="avatar"></div>
+                <ul>
+                  <li><a href="dashboard.php">Dashboard</a></li>
+                  <li><a href="logout.php">Log Out</a></li>
               </ul>
             </li>
           </ul>
